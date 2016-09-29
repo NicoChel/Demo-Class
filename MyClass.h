@@ -1,17 +1,21 @@
 //Header File
+#include <string>
+#include <iostream>
+
+using namespace std;
 
 class MyClass
 {
 	private:
-	 int room;
-	 string room;
-	 bool fun;
+		int num = 0;
+		string room = " ";
+		bool fun = true;
 	 
 	public:
-	 void setNum(int);
-	 int getNum;
-	 void setRoom (string);
-	 string getRoom();
-	 void setFun(bool);
-	bool setFun();
-}
+		void setNum(int);
+		int getNum();
+		void setRoom (string);
+		string getRoom();
+		void setFun(bool);
+		bool getFun();
+};
