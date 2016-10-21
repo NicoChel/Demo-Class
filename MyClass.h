@@ -1,21 +1,30 @@
 //Header File
-#include <string>
+#ifndef MYCLASS_H
+#define MYCLASS_H
 #include <iostream>
+#include <string.h>
 
 using namespace std;
 
 class MyClass
 {
-	private:
-		int num = 0;
-		string room = " ";
-		bool fun = true;
-	 
-	public:
-		void setNum(int);
-		int getNum();
-		void setRoom (string);
-		string getRoom();
-		void setFun(bool);
-		bool getFun();
+     private:
+              int    num;
+              string room;
+              bool   fun;
+
+      public:
+              void setNum(int x);
+              int  getNum();
+              void setRoom(string r);
+              string getRoom();
+              void setFun(bool f);
+              bool getFun();
+              MyClass();
+              MyClass(int n, string s);
+              ~MyClass();
+
 };
+
+#endif
+

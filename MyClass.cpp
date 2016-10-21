@@ -1,32 +1,46 @@
 // Implementation File
 #include "MyClass.h"
+#include <iostream>
+#include <string.h>
 
-void MyClass::setNum(int v)
+using namespace std;
+MyClass::MyClass(){}
+
+MyClass::MyClass(int n, string s)
 {
-	num = v;
+	num = n;
+	room = s;
+}
+MyClass::~MyClass() 
+{
+	
+}
+void MyClass::setNum(int x)
+{
+        num = x;
 }
 
 int MyClass::getNum()
 {
-	return num;
+        return num;
 }
 
-void MyClass::setRoom(string w)
+void MyClass::setRoom(string r)
 {
-	room = w;
+        room = r;
 }
 
 string MyClass::getRoom()
 {
-	return room;
+        return room;
 }
 
-void MyClass::setFun(bool x)
+void MyClass::setFun(bool f)
 {
-	fun = x;
+        fun = f;
 }
 
 bool MyClass::getFun()
 {
-	return fun;
+        return fun;
 }
